@@ -7,6 +7,8 @@ import ComA from './components/ComA'
 import ComB from './components/ComB'
 import ComC from './components/ComC'
 import ComD from './components/ComD'
+import ArrayMethods from './components/ArrayMethods'
+import FilterReduce from './components/FilterReduce'
 
 const App = () => {
 
@@ -21,9 +23,18 @@ const App = () => {
     {name:"laptop" , price: "$1299", img: laptop},
   ];
 
+  let shopping =[
+    {id:1, product:"iphone", price:999, category:"electronics"},
+    {id:2, product:"jeans", price:49, category:"clothing"},
+    {id:3, product:"blender", price:79, category:"home appliances"},
+    {id:4, product:"t-shirt", price:19, category:"clothing"},
+    {id:5, product:"laptop", price:1299, category:"electronics"},
+    {id:6, product:"microwave", price:99, category:"home appliances"},
+  ]
+
   return (
     <>
-      <Products name="iphone" price="$899" img={phone} />
+      {/* <Products name="iphone" price="$899" img={phone} />
       <Products name="laptop" price="$1299" img={laptop} />
       <Products name="tab" price="$499" img={tab} />
 
@@ -33,7 +44,12 @@ const App = () => {
 
       <ComC arr={arr} />
 
-      <ComD arrObj={arrObj} />
+      <ComD arrObj={arrObj} /> */}
+
+      {/* <ArrayMethods /> */}
+
+      <FilterReduce shopping={shopping} />
+      
     </>
   )
 }
